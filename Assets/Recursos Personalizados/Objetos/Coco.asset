@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7efd3af1d1d86cc4b884e3d3171ab557, type: 3}
+  m_Name: Coco
+  m_EditorClassIdentifier: 
+  id: coco
+  name: Coco
+  image: {fileID: 21300000, guid: 0f9dd62a48d08344190b30370d4eb66c, type: 3}
+  descriptions:
+  - lvl: 0
+    text: Um objeto redondo e marrom
+  - lvl: 5
+    text: Um objeto redondo, que possui um recheio branco delicioso
+  - lvl: 0
+    text: 
+  durability: 0
+  durabilityAutoDecay: 0
+  interactions:
+  - minLevel: 0
+    singleInteraction: 0
+    bonusXP: 10
+    maxLvlToGainXP: 0
+    maxLvlToShowInInteraction: 5
+    description: "Um curioso objeto redondo, que as vezes faz um som engra\xE7ado
+      quando chacoalha."
+    effects: []
+    requirements: []
+  - minLevel: 4
+    singleInteraction: 1
+    bonusXP: 100
+    maxLvlToGainXP: 0
+    maxLvlToShowInInteraction: 4
+    description: "Jogando o coco em cima de uma das suas pedras, voc\xEA o abriu e
+      descobriu algo dentro dele!"
+    effects:
+    - effectType: 0
+      chanceToFail: 0
+      energyRecharged: 0
+      quantityValue: 20
+      resourceGenerated: {fileID: 0}
+      decayValue: 0
+      skill: {fileID: 0}
+      skillExperience: 0
+      effectText: "Voc\xEA comeu o recheio branco e saciou parte da sua fome"
+    - effectType: 1
+      chanceToFail: 0
+      energyRecharged: 0
+      quantityValue: 0
+      resourceGenerated: {fileID: 0}
+      decayValue: 0
+      skill: {fileID: 11400000, guid: fadeaed84e4d47748b800bdabd512cc2, type: 2}
+      skillExperience: 100
+      effectText: "Voc\xEA aprendeu a abrir o Coco!"
+    - effectType: 1
+      chanceToFail: 0
+      energyRecharged: 0
+      quantityValue: 0
+      resourceGenerated: {fileID: 0}
+      decayValue: 0
+      skill: {fileID: 11400000, guid: 3f55916a6bae8654694d244586bdea93, type: 2}
+      skillExperience: 100
+      effectText: "Voc\xEA aprendeu a comer Coco!"
+    requirements:
+    - type: 0
+      requirementMinLvl: 0
+      item: {fileID: 11400000}
+      quantity: 1
+      consumeItem: 1
+      decayItem: 0
+      decayValue: 0
+      skill: {fileID: 0}
+      energyNeeded: 0
+    - type: 0
+      requirementMinLvl: 0
+      item: {fileID: 11400000, guid: 642c2e06db3088a4ca7a2f522a367588, type: 2}
+      quantity: 1
+      consumeItem: 0
+      decayItem: 1
+      decayValue: 10
+      skill: {fileID: 0}
+      energyNeeded: 0
