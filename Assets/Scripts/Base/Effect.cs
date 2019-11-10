@@ -12,7 +12,6 @@ namespace HomoCuriositatis.Base{
         [Header("Preencher apenas caso o tipo seja Produção")]
         public int quantityValue;
         public Item resourceGenerated;
-        public int decayValue;
         [Header("Preencher apenas caso o tipo seja Skill")]
         public Skill skill;
         public int skillExperience;
