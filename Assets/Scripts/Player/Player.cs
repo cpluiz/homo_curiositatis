@@ -22,7 +22,8 @@ namespace HomoCuriositatis.Player{
         }
 
         private void addTextToMessagePool(string text){
-            _messagePool += "\n\n"+text;
+            if(text != "")
+                _messagePool += "\n\n"+text;
         }
 
         public string[] GetInventoryNames(){
@@ -46,6 +47,13 @@ namespace HomoCuriositatis.Player{
             if (!knownItems.ContainsKey(itemID))
                 return;
             knownItems[itemID].UpdateXP(xpToUpdate);
+        }
+
+        public void UpdateSkill(Skill skill, int skillExperience = 0){
+            //Se ainda não possui a skill, adiciona ela na lista
+            if(!knownSkills.ContainsKey(skill.id))
+                knownSkills.Add(skill.id, new KnownSkill(skill));
+            knownSkills[skill.id].UpdateXP(skillExperience);
         }
 
         public void ReceiveItem(Item item, int quantity = 1){
@@ -118,7 +126,7 @@ namespace HomoCuriositatis.Player{
                             playerEnergy += effect.energyRecharged;
                             break;
                         case EffectType.skill:
-                            knownSkills[effect.skill.id].UpdateXP(effect.skillExperience);
+                            UpdateSkill(effect.skill, effect.skillExperience);
                             break;
                     }
                 }
