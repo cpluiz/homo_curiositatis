@@ -125,7 +125,7 @@ namespace HomoCuriositatis.Player{
                         case EffectType.recharge:
                             playerEnergy += effect.energyRecharged;
                             break;
-                        case EffectType.skill:
+                        case EffectType.skillKnowledge:
                             UpdateSkill(effect.skill, effect.skillExperience);
                             break;
                     }

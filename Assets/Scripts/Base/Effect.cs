@@ -24,7 +24,7 @@ namespace HomoCuriositatis.Base{
     [System.Serializable]
     public enum EffectType{
         recharge = 0,
-        skill = 1,
+        skillKnowledge = 1,
         itemKnowledge = 3,
         production = 2,
     }

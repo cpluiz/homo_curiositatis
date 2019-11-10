@@ -12,8 +12,8 @@ namespace HomoCuriositatis.Base{
         public int maxLvlToShowInInteraction;
         [TextArea] public string successDescription;
         [TextArea] public string failureDescription;
-        public Effect[] effects;
         public Requirement[] requirements;
+        public Effect[] effects;
     }
 
     [System.Serializable]
