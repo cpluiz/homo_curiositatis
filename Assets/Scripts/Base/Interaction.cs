@@ -5,6 +5,7 @@ namespace HomoCuriositatis.Base{
     [System.Serializable]
     public struct Interaction{
         public int minLevel;
+        [Range(0, 12)] public int timeConsumption;
         public bool singleInteraction;
         [Range(0, 100)]
         public int bonusXP;
