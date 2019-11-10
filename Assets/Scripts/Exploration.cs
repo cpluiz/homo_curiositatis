@@ -9,8 +9,7 @@ namespace HomoCuriositatis{
     public class Exploration : ScriptableObject{
         [TextArea] public string explorationText;
         public bool singleExploration;
-        public Requirement[] requirements;
-        public Effect[] effects;
+        public Interaction[] interactions;
     }
 
 }
