@@ -16,7 +16,8 @@ namespace HomoCuriositatis.Base{
         [Header("Preencher apenas caso o tipo seja Skill")]
         public Skill skill;
         public int skillExperience;
-        [TextArea] public string effectText;
+        [TextArea] public string successEffectText;
+        [TextArea] public string failureEffectText;
     }
 
     [System.Serializable]

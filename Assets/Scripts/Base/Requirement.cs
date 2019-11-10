@@ -17,6 +17,7 @@ namespace HomoCuriositatis.Base{
 
         [Header("Preencher apepnas caso tipo = Habilidade")]
         public Skill skill;
+        public int skillMinLvl;
 
         [Header("Preencher apenas caso tipo = Energia")]
         [Range(0,100)]

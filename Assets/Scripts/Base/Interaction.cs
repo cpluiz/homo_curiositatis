@@ -10,8 +10,15 @@ namespace HomoCuriositatis.Base{
         public int bonusXP;
         public int maxLvlToGainXP;
         public int maxLvlToShowInInteraction;
-        [TextArea] public string description;
+        [TextArea] public string successDescription;
+        [TextArea] public string failureDescription;
         public Effect[] effects;
         public Requirement[] requirements;
+    }
+
+    [System.Serializable]
+    public enum InteractionType{
+        item = 0,
+        exploration = 1
     }
 }
